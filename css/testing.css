@@ -1,4 +1,4 @@
-﻿
+
 *,*:after,*:before{
 
     margin:0;
@@ -15,22 +15,43 @@
     height:710px;
     background-image:url(../images/header-bg.jpg);
     background-size:cover;
-    position:relative
+    position:relative;
+        
+        
 }
-
+.header nav
+{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.31);
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
 .header nav h1{
     color:white;
     font-size:50px;
-    float:left;
     padding-top:17px;
-    text-align:center
+    margin-left: 20px;
 }
-@media (max-width: 575.98px) { 
-    .header nav h1{
+@media (max-width: 575.98px)
+{ 
+.header nav h1{
         font-size:40px;
     }
-    .header nav h1 span{
-        font-size:25px;}
+.header nav h1 span
+{
+    font-size:25px;
+}
 }
 .header nav h1 span{
     font-size:40px;
@@ -48,6 +69,8 @@
     text-decoration:none;
     color:white;
     font-size:20px;
+    text-transform: uppercase;
+    font-weight: 600;
 
 }
 .content {
@@ -113,17 +136,17 @@ border-radius:20px;
 margin:auto;
 border:2px solid white;
 position:relative;
-top:85%
+top:80%
 }
 .footer .scroll{
-    position:relative;
+position:relative;
     top:8%;
     left:50%;
     width:3px;
     height:10px;
-    background:white;
-    transform:translateX(-50%);
-    animation:scrolling 1s ease-in-out infinite 
+background:white;
+ transform:translateX(-50%);
+ animation:scrolling 1s ease-in-out infinite 
 }
 @keyframes scrolling{
 
